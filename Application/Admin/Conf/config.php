@@ -1,0 +1,51 @@
+﻿<?php
+return array(
+	//'配置项'=>'配置值'
+    'TMPL_PARSE_STRING'  =>array(
+        '__COMMON_ADMIN__' => '/bambin/Application/Admin/Common/', // 更改默认的/Public 替换规则
+    ),
+    //配置左侧菜单
+    'MENU'   =>array(
+        array(
+            'id'=>1,
+            'name'=>'基本设置',
+            'son'=>array(
+                array('id'=>11,'name'=>'返回首页','href'=>'Index/welcome'),
+                array('id'=>12,'name'=>'基本设置','href'=>'Index/update'),
+            )
+        ),
+        array(
+            'id'=>2,
+            'name'=>'网站管理',
+            'son'=>array(
+                array('id'=>21,'name'=>'导航管理','href'=>'Nav/index'),
+                array('id'=>22,'name'=>'用户中心导航','href'=>'Userside/index'),
+                array('id'=>23,'name'=>'新闻管理','href'=>'News/index'),
+                array('id'=>31,'name'=>'品牌介绍','href'=>'About/index'),
+            )
+        ),
+        array(
+            'id'=>3,
+            'name'=>'产品管理',
+            'son'=>array(
+                array('id'=>32,'name'=>'产品中心','href'=>'Goods/index'),
+                array('id'=>33,'name'=>'推荐产品管理','href'=>'Recommend/index'),
+            )
+        ),
+        array(
+            'id'=>4,
+            'name'=>'订单管理',
+            'son'=>array(
+                array('id'=>41,'name'=>'订单管理','href'=>'Order/index'),
+            )
+        ),
+        array(
+            'id'=>5,
+            'name'=>'管理员管理',
+            'son'=>array(
+                array('id'=>51,'name'=>'管理员管理','href'=>'Admin/index'),
+                array('id'=>52,'name'=>'权限管理','href'=>'Power/index'),
+            )
+        )
+    )
+);

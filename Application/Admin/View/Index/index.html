@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台模板管理系统</title>
+<link type="text/css" rel="stylesheet" href="__COMMON_ADMIN__css/index.css" />
+<script type="text/javascript" src="__COMMON_ADMIN__js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="__COMMON_ADMIN__js/menu.js"></script>
+</head>
+
+<body>
+<div class="top"></div>
+<div id="header">
+	<div class="logo">Bambin后台管理系统</div>
+	<div class="navigation">
+		<ul>
+		 	<li>欢迎您！</li>
+			<li><a href="">{$admin.name}</a></li>
+			<li><a href="{:U('Login/exitLogin')}">退出</a></li>
+		</ul>
+	</div>
+</div>
+<div id="content">
+	<div class="left_menu">
+				<ul id="nav_dot">
+      <volist name="menu" id="val">
+      <li>
+          <h4 id="list{$val.id}"><span></span>{$val.name}</h4>
+          <volist name="val.son" id="vo">
+              <if condition="in_array($vo['id'],$admin['role'])">
+                  <div class="list-item none" id="list{$vo.id}" onclick="change_con('{:U($vo[\'href\'])}',this);">
+                    <a>{$vo.name}</a>
+                  </div>
+              </if>
+          </volist>
+        </li>
+      </volist>
+
+  </ul>
+		</div>
+		<div class="m-right">
+				<iframe src="{:U('Index/welcome')}" scrolling="auto" frameborder="0" style="width:100%; height: 100%; background: #fff;" id="conR"></iframe>
+
+		</div>
+</div>
+<div class="bottom"></div>
+<div id="footer"><p>Copyright©  2015 版权所有 京ICP备05019125号-10  </p></div>
+<script>navList(12);</script>
+</body>
+</html>
+<script>
+   function change_con(url,aa){
+       $('#conR').attr('src',url);
+   }
+</script>

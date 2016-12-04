@@ -1,0 +1,930 @@
+[ 2016-12-01T10:41:42+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0967s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0121s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0199s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0292s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0509s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0278s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0330s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0058s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0540s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013466s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.205037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021481s ]
+
+[ 2016-12-01T10:41:42+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0090s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0094s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0088s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0106s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2016-12-01T10:41:48+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0097s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0093s ]
+SQL: SELECT `id`,`img_thumb`,`name`,`sale_price`,`standard`,`effect`,`info` FROM `bm_goods` WHERE ( is_show=1 ) ORDER BY id desc LIMIT 0,4   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_goods` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2016-12-01T10:41:51+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0092s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000685s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2016-12-01T10:41:52+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0090s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0094s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002611s ]
+
+[ 2016-12-01T10:41:53+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0100s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002516s ]
+
+[ 2016-12-01T10:41:59+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0120s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0097s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000510s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-12-01T10:42:03+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0099s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_user` [ RunTime:0.0905s ]
+SQL: SELECT * FROM `bm_user` WHERE ( name='quyihui931204' and pwd='d480c20b35e225df87b3d3f8c7f9c821' ) LIMIT 1   [ RunTime:0.0303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+
+[ 2016-12-01T10:42:07+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001994s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0091s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0094s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2016-12-01T10:42:14+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0102s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0094s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000431s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-12-01T10:42:15+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0101s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0097s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002116s ]
+
+[ 2016-12-01T10:42:16+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002724s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0058s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0059s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002180s ]
+
+[ 2016-12-01T10:42:35+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0091s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0096s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\bambin\Application\Home\Controller\UserController.class.php 第 141 行.
+NOTIC: [8] Undefined index: verify D:\wamp\www\bambin\Application\Home\Controller\UserController.class.php 第 149 行.
+
+[ 2016-12-01T10:42:41+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=register&ac=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0089s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_user` [ RunTime:0.0089s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\bambin\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `bm_user` WHERE `name` = 'quyihui931204' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\bambin\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `bm_user` (`name`,`pwd`) VALUES ('quyihui931204','d480c20b35e225df87b3d3f8c7f9c821') [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `bm_user_detail` [ RunTime:0.0363s ]
+SQL: INSERT INTO `bm_user_detail` (`user_id`,`email`) VALUES ('23','393240588@qq.com') [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2016-12-01T10:42:45+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0090s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2016-12-01T10:42:53+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0087s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0095s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_user` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `bm_user` WHERE ( name='quyihui931204' and pwd='d480c20b35e225df87b3d3f8c7f9c821' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2016-12-01T10:42:55+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=register&ac=account
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0054s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0056s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2016-12-01T10:42:56+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0093s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0097s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002284s ]
+
+[ 2016-12-01T10:42:57+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=User&a=verify2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0086s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0092s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002136s ]
+
+[ 2016-12-01T10:43:05+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0093s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0087s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0087s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001958s ]
+
+[ 2016-12-01T10:43:22+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Index&a=about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0092s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0104s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0102s ]
+SQL: SELECT `img`,`content` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000618s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001864s ]
+
+[ 2016-12-01T10:43:26+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0092s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0096s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`img_thumb`,`name`,`sale_price`,`standard`,`effect`,`info` FROM `bm_goods` WHERE ( is_show=1 ) ORDER BY id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_goods` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2016-12-01T10:43:31+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Index&a=contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0098s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0090s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `address`,`postcode`,`hotline`,`tel`,`fax`,`email`,`url` FROM `bm_myinfor` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined variable: side_nav D:\wamp\www\bambin\Application\Runtime\Cache\Home\a873315f4d7930e02d8853d9439fbb36.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001955s ]
+
+[ 2016-12-01T10:46:38+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0086s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0094s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`img_thumb`,`name`,`sale_price`,`standard`,`effect`,`info` FROM `bm_goods` WHERE ( is_show=1 ) ORDER BY id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_goods` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002369s ]
+
+[ 2016-12-01T10:49:07+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0089s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0091s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_userside` [ RunTime:0.0461s ]
+SQL: SHOW COLUMNS FROM `bm_userside` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=0 ) ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=1 ) ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=2 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=5 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=6 ) ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=7 ) ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_goods_collect` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `bm_goods_collect` WHERE ( user_id=23 ) ORDER BY time desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Undefined variable: trends D:\wamp\www\bambin\Application\Runtime\Cache\Home\fdc24d97de08be5342dd939702a23904.php 第 98 行.
+NOTIC: [8] Undefined variable: like D:\wamp\www\bambin\Application\Runtime\Cache\Home\fdc24d97de08be5342dd939702a23904.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002085s ]
+
+[ 2016-12-01T10:49:12+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Member&a=my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0083s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0088s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_userside` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `bm_userside` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=0 ) ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=1 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=2 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=5 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=6 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`url` FROM `bm_userside` WHERE ( pid=7 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bm_user_detail` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `bm_user_detail` WHERE ( user_id=23 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_region` [ RunTime:0.0319s ]
+SQL: SELECT `id`,`name` FROM `bm_region` WHERE ( pid=1 )  [ RunTime:0.0307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: province_id D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 92 行.
+NOTIC: [8] Undefined variable: city_data D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 97 行.
+NOTIC: [8] Undefined variable: area_data D:\wamp\www\bambin\Application\Runtime\Cache\Home\cb5c7d1f4bac61ef1c68c37e575be8cc.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002142s ]
+
+[ 2016-12-01T11:15:02+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0048s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0049s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`img_thumb`,`name`,`sale_price`,`standard`,`effect`,`info` FROM `bm_goods` WHERE ( is_show=1 ) ORDER BY id desc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_goods` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-12-01T22:49:46+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0026s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0144s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0132s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0243s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0124s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0174s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2016-12-01T22:49:50+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Index&a=about
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0088s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0089s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0077s ]
+SQL: SELECT `img`,`content` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\5941d6446379a4a50e980a139ca5299f.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.289896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.290030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-12-01T22:49:55+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0024s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0023s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`img_thumb`,`name`,`sale_price`,`standard`,`effect`,`info` FROM `bm_goods` WHERE ( is_show=1 ) ORDER BY id desc LIMIT 0,4   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_goods` WHERE ( is_show=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-12-01T22:49:59+08:00 ] 127.0.0.1 /bambin/index.php?m=Home&c=Index&a=news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0023s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_side=1 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`time`,`info` FROM `bm_news` ORDER BY time desc LIMIT 0,7   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bm_news` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\cecb45903f8aa0e33f62e7ce7ef7b49f.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002128s ]
+
+[ 2016-12-01T22:54:04+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0084s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0063s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0058s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0058s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2016-12-01T22:56:56+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `bm_nav` [ RunTime:0.0091s ]
+SQL: SELECT `name`,`url` FROM `bm_nav` WHERE ( is_head=1 ) ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bm_myinfor` [ RunTime:0.0093s ]
+SQL: SELECT `copyright`,`address` FROM `bm_myinfor` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_about` [ RunTime:0.0089s ]
+SQL: SELECT `img`,`info` FROM `bm_about` ORDER BY id desc LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_recommend` [ RunTime:0.0087s ]
+SQL: SELECT `goods_id` FROM `bm_recommend` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bm_goods` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`info`,`img_thumb` FROM `bm_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bm_news` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`title`,`time` FROM `bm_news` WHERE ( is_top=1 ) ORDER BY time desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\bambin\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+

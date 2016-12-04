@@ -1,0 +1,18 @@
+[ 2016-11-15T14:44:51+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'e005151611'
+
+[ 2016-11-15T14:45:58+08:00 ] 127.0.0.1 /bambin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'e005151611'
+

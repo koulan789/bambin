@@ -1,0 +1,156 @@
+<include file="Public:header1"/>
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/member_info.css" />
+	<script type="text/javascript" src="__COMMON__scripts/mod_sidebar_toggle.js"></script>
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+            <include file="Public:userside"/>
+			<div  class="main_text ff_simsun fs_12">
+
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('Member/index')}">会员中心</a>
+					&gt;&gt;
+					<a  class="current">收获地址</a>
+				</p>
+                <form action="{:U('Member/address')}" method="post"  onsubmit="return check_form1()">
+                    <input type="hidden" name="id" id="id" />
+                    <h1 class="headline type2 ff_yh fs_18">收货人信息</h1>
+                    <span class="tag label">姓　　名：</span>
+                    <input type="text" name="name" id="name" class="input long" />
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                    <span class="tag label">性　　别：</span>
+                    <input type="radio" name="sex" value="1" class="radio sex"  />
+                    <label class="tag tip">男</label>
+                    <input type="radio" name="sex" value="0" class="radio sex" checked="checked" />
+                    <label class="tag tip">女</label>
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                    <div id="region">
+                    <span class="tag label">所 在 地：</span>
+                    <select id="province">
+                        <option selected="selected" value="0">请选择省（直辖市、自治区）</option>
+                        <volist name="region_data" id="region">
+                            <option value="{$region.id}">{$region.name}</option>
+                        </volist>
+
+                    </select>
+                    <select id="city">
+                        <option selected="selected" value="0">请选择市（地区）</option>
+                    </select>
+                    <select name="district_id" id="area">
+                        <option selected="selected" value="0">请选择县（地区）</option>
+                    </select>
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                    </div>
+                    <span class="tag label">详细地址：</span>
+                    <input type="text" name="address" class="input long" />
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                    <span class="tag label">手机号码：</span>
+                    <input type="text" name="tel" class="input long" />
+                    <span class="tag tip">请真实填写，用于系统通知和收获联系</span>
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                    <input type="hidden" value="{$url}" name="pre" />
+                    <br/>
+                    <input type="submit" value="保存并使用" class="float_btn save ff_yh fs_14" />
+                    <input type="reset" value="重置" class="float_btn back ff_yh fs_14" />
+                </form>
+                <form method="post" action="{:U('Member/change_default')}">
+				<div class="current_addr">
+					<p class="title fs_14">当前收货地址</p>
+					<input type="radio" checked="checked" name="is_default" value="{$address_list.0.id}" class="ca_radio" />
+					<p class="text">{$address_list.0.address_all}(电话：{$address_list.0.tel})（{$address_list.0.name}
+                        <if condition="$address_list[0]['sex'] eq 1">先生<else/>女士</if>收）</p>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+					<a href="javascript:edit('{$address_list.0.id}')" class="edit_addr">修改地址</a>
+				</div>
+				<ul class="addr_list">
+                    <volist name="address_list" id="addr">
+                        <if condition="$addr['is_default'] eq 0">
+                            <li>
+                                <input type="radio" name="is_default" value="{$addr.id}" />
+                                {$addr.address_all}(电话：{$addr.tel})（{$addr.name}<if condition="$addr['sex'] eq 1">先生<else/>女士</if>收）
+                            </li>
+                        </if>
+                    </volist>
+				</ul>
+				<input type="submit" value="设为默认" class="float_btn save ff_yh fs_14" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+                </form>
+                </div>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer"/>
+<script>
+    $('#province').change(function(){
+        var id = $('#province').val();
+        $.post("{:U('Member/change_address')}",{id:id},function(data){
+            var str = '<option selected="selected" value="0">请选择市（地区）</option>';
+            if(data.length>0){
+               for(var i=0; i<data.length; i++){
+                    str += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+               }
+           }
+          $('#city').html(str);
+        },'json');
+    });
+    $('#city').change(function(){
+        var id = $('#city').val();
+        $.post("{:U('Member/change_address')}",{id:id},function(data){
+            var str = '<option selected="selected" value="0">请选择县（地区）</option>';
+            if(data.length>0){
+                for(var i=0; i<data.length; i++){
+                    str += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                }
+            }else{
+                $('#area').removeAttr('name');
+                $('#city').attr('name','district_id');
+            }
+            $('#area').html(str);
+        },'json');
+    });
+    function check_form1(){
+        var name = $('input[name="name"]').val();
+        if($.trim(name) == ''){
+            alert('请输入姓名');
+            return false;
+        }
+        var address = $('input[name="address"]').val();
+        if($.trim(address) == ''){
+            alert('请输入详细地址');
+            return false;
+        }
+        var tel = $('input[name="tel"]').val();
+        if($.trim(tel) == ''){
+            alert('请输入手机号码');
+            return false;
+        }
+        var district_id = $('select[name="district_id"]').val();
+        if($.trim(district_id) == 0){
+            alert('请选择所在地');
+            return false;
+        }
+    }
+    function edit(){
+        $('#id').val('{$address_list.0.id}');
+        var sex = '{$address_list.0.sex}';
+        if(sex == 1){
+            $('.sex[value="1"]').attr('checked','checked');
+        }else{
+            $('.sex[value="0"]').attr('checked','checked');
+        }
+        $('input[name="name"]').val('{$address_list.0.name}');
+        $('input[name="address"]').val('{$address_list.0.address}');
+        $('input[name="tel"]').val('{$address_list.0.tel}');
+    }
+</script>

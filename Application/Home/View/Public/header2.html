@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{$title}</title>
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/footer.css" />
+    <script type="text/javascript" src="__COMMON__scripts/jquery.js"></script>
+    <script type="text/javascript" src="__COMMON__scripts/mod_scrollbar.js"></script>
+    <script type="text/javascript" src="__COMMON__scripts/mod_tabs.js"></script>
+</head>
+<body>
+<!-- __头部#header -->
+<div id="header" class="type1">
+    <a href="{:U('Index/index')}" class="logo">
+        <img src="__COMMON__images/logo.png" />
+    </a>
+    <p class="link ff_simsun fs_12">
+        <a href="{:U('User/login')}" <if condition="$title eq '登录'"> class="current"</if> >会员登录</a>
+        |
+        <a href="{:U('User/register')}" <if condition="$title eq '注册'"> class="current"</if>>免费注册</a>
+    </p>
+</div>
+<!-- //头部#header -->

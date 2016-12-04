@@ -1,0 +1,51 @@
+<include file="Public:header"/>
+	<!-- __主体#content -->
+	<div id="content" class="type2">
+		<div class="box1 ff_simsun fs_12">
+			<a href="{:U('Index/about')}"><h1 class="ff_fz fs_18">品牌介绍</h1></a>
+			<img src="{$about_list.img}" />
+			<p>{$about_list.info}</p>
+
+			<!-- 清除浮动样式 -->
+		</div>
+		<div class="box2 ff_simsun fs_12">
+			<h1 class="ff_fz fs_18">产品推荐</h1>
+			<div class="slideshow">
+				<div class="wrapper">
+					<ul class="image plain">
+						<volist name="reco_list" id="val">
+						<li>
+							<a href="{:U('Goods/detail',array('id'=>$val['id']))}"> <img src="{$val.img_thumb}" /></a>
+                            <a href="{:U('Goods/detail',array('id'=>$val['id']))}"><h2 class="fs_12">{$val.name}</h2></a>
+							<p>{$val.info}</p>
+							<!-- 清除浮动样式 -->
+							<div class="clear"></div>
+						</li>
+						</volist>
+					</ul>
+					<ul class="nav">
+						<li class="prev"></li>
+						<li class="next"></li>
+					</ul>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box3 ff_simsun fs_12">
+			<h1 class="ff_fz fs_18">新闻动态</h1>
+			<ul class="news_list">
+				<li class="more">
+					<a href="{:U('Index/news')}" class="more">More&gt;&gt;</a>
+				</li>
+				<volist name="news_list" id="v">
+				<li>
+					<a href="{:U('Index/newsDetail',array('id'=>$v['id']))}" class="entry">{$v.title}</a>
+					<span class="date">{$v.time}</span>
+				</li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<include file="Public:footer"/>

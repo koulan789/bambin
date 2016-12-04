@@ -1,0 +1,29 @@
+<include file="Public:header1" />
+<link rel="stylesheet" type="text/css" href="__COMMON__styles/introduction.css" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+            <include file="Public:side" />
+			<div class="main_text ff_simsun fs_14">
+				<p class="current_location ff_fz">
+					当前位置：
+					<a href="../index.html">首页</a>
+					&gt;&gt;
+					<a href="introduction.html" class="current">品牌介绍</a>
+				</p>
+				<div class="intro">
+					<span class="border_top"></span>
+					<div class="intro_text">
+						<p>{$about_list.content}</p>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</div>
+					<span class="border_bottom"></span>
+				</div>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer" />

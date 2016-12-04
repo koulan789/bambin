@@ -1,0 +1,55 @@
+<include file="Public:header1"/>
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/product.css" />
+	<script type="text/javascript" src="__COMMON__scripts/page_product.js"></script>
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public:side" />
+			<div class="main_text ff_simsun fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="./">首页</a>
+					&gt;&gt;
+					<a href="{:U('Goods/index')}" class="current">产品中心</a>
+				</p>
+				<ul class="product_list">
+                    <volist name="goods_list" id="va">
+					<li>
+						<div class="img">
+							<img src="{$va.img_thumb}" />
+							<a href="{:U('Goods/detail',array('id'=>$va['id']))}" class="ff_fz fs_20">点击购买&gt;&gt;</a>
+						</div>
+						<p class="title ff_yh fs_18">{$va.name}</p>
+						<p class="detail">
+							￥{$va.sale_price} 【<span class="tag">官方价格</span>】 <span class="tab">容量：</span>{$va.standard}<br />
+							<span class="tab">功效：</span>
+							<span class="func tag">{$va.effect}</span>
+
+						</p>
+						<p class="description">
+							<span class="tab">产品详情：</span>
+							{$va.info}
+							<a href="{:U('Goods/detail',array('id'=>$va['id']))}" class="view_all">查看全部>></a>
+						</p>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+                    </volist>
+
+				</ul>
+				<p class="page_nav">
+					<a <if condition="$page gt 1" > href="{:U('Goods/index',array('page'=>$page-1))}"</if>>上一页</a>
+					|
+                    <volist name="pagelist" id="vol">
+					<a href="{:U('Goods/index',array('page'=>$vol))}" <if condition="$vol eq $page">class="current"</if> > {$vol}</a>
+					|
+                    </volist>
+					<a <if condition="$page lt $pageNum" > href="{:U('Goods/index',array('page'=>$page+1))}"</if>>下一页</a>
+				</p>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer"/>

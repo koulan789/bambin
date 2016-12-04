@@ -1,0 +1,140 @@
+<include file="Public:header1"/>
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/confirm_address.css" />
+	<script type="text/javascript" src="__COMMON__scripts/page_confirm_address.js"></script>
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div  class="main ff_yh fs_14">
+			<ul class="confirm_nav plain fs_16">
+				<li class="first">
+					确认订单
+					<span class="right_arrow"></span>
+				</li>
+				<li class="current">
+					<span class="left_arrow"></span>
+					填写核对订单
+					<span class="right_arrow"></span>
+				</li>
+				<li class="last">
+					<span class="left_arrow"></span>
+					订单提交
+				</li>
+				<!-- 清除浮动样式 -->
+				<li class="clear"></li>
+			</ul>
+			<h1 class="fs_16">
+				确认收货地址
+			</h1>
+			<div class="info_box">
+				<span class="tag">收货人：</span>
+				<span class="text name">{$address.name}<if condition="$address['sex'] eq 1">先生<else/>女士</if></span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">手机：</span>
+				<span class="text ff_simsun">{$address.tel}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">收货区域：</span>
+				<span class="text ff_simsun fs_12">{$address.address_area}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">详细地址：</span>
+				<span class="text ff_simsun fs_12">{$address.address}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<a href="{:U('Member/address')}" class="change_addr ff_simsun fs_12">使用其他地址</a>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</div>
+			<h1 class="fs_16">购物清单</h1>
+			<ul class="item_list">
+                <li class="header">
+                    <span class="float name">商品名称</span>
+                    <span class="float price">单价（元）</span>
+                    <span class="float amount">数量</span>
+                    <span class="float subtotal">小计</span>
+                    <!-- 清除浮动样式 -->
+                    <div class="clear"></div>
+                </li>
+                <if condition="$data">
+                    <li class="entry">
+                        <div class="float name ff_simsun fs_12">
+                            <img src="{$data.img_thumb}" />
+                            <p class="title">{$data.name}</p>
+                            <p class="category">容量：{$data.standard}</p>
+                        </div>
+                        <p class="float price">{$data.sale_price}元</p>
+                        <p class="float amount">{$num}</p>
+                        <p class="float subtotal">{$data.one_total}元</p>
+                        <input type="hidden" name ="goods_id" value="{$id}" />
+                        <input type="hidden" name ="num" value="{$num}" />
+                        <!-- 清除浮动样式 -->
+                        <div class="clear"></div>
+                    </li>
+                <elseif condition="$order_data"/>
+                    <volist name="order_data" id="order">
+                    <li class="entry">
+                        <div class="float name ff_simsun fs_12">
+                            <img src="{$order.img_thumb}" />
+                            <p class="title">{$order.name}</p>
+                            <p class="category">容量：{$order.standard}</p>
+                        </div>
+                        <p class="float price">{$order.sale_price}元</p>
+                        <p class="float amount">{$order.num}</p>
+                        <p class="float subtotal">{$order.one_total}元</p>
+                        <input type="hidden" name ="cart_id" value="{$id}" />
+                        <!-- 清除浮动样式 -->
+                        <div class="clear"></div>
+                    </li>
+                    </volist>
+                </if>
+			</ul>
+			<div class="submit_order">
+				<span class="check fs_12">
+					<span class="fs_14">支付宝支付</span>
+				</span>
+                <input type="hidden" name ="total" value="{$total}" />
+                <input type="hidden" name ="send" value="{$send}" />
+                <input type="hidden" name ="insure" value="{$insure}" />
+                <input type="hidden" name ="message" value="{$message}" />
+				<input type="button" onclick="add_order()" value="提交订单" class="submit ff_yh" />
+				<span class="total">
+					应付总额:<span class="number">{$all_total}元</span>
+				</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __提交订单成功框#popUpSuccess -->
+	<div id="popUpSuccess" class="popup_box">
+		<a href="{:U('Member/order')}" onclick=" popUpApp.close(this);" class="close"></a>
+	</div>
+	<!-- //提交订单成功框#popUpSuccess -->
+	<!-- __提交订单失败框#popUpFail -->
+	<div id="popUpFail" class="popup_box">
+		<a href="{:U('Index/index')}" onclick=" popUpApp.close(this);" class="close"></a>
+	</div>
+	<!-- //提交订单失败框#popUpFail -->
+<include file="Public:footer"/>
+
+<script>
+    function add_order(){
+        var address_id='{$address.id}';
+        var goods_id ='{$id}';
+        var num ='{$num}';
+        var cart_id ='{$cart_id}';
+        var total ='{$total}';
+        var send ='{$send}';
+        var insure ='{$insure}';
+        $.post("{:U('Buy/add_order')}",{address_id:address_id,goods_id:goods_id,num:num,cart_id:cart_id,total:total,send:send,insure:insure},function(data){
+           if(data == 0){
+               alert('非法请求');
+           }else if(data == -1){
+               popUpApp.fail();
+           }else if(data ==1){
+               popUpApp.success();
+           }
+        });
+    }
+</script>

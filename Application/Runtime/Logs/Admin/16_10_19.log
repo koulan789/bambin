@@ -1,0 +1,14 @@
+[ 2016-10-19T14:25:01+08:00 ] 127.0.0.1 /bambin/index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `bm_power` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: power_id D:\wamp\www\bambin\Application\Admin\Controller\IndexController.class.php 第 11 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `role` FROM `bm_power` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `role` FROM `bm_power` WHERE ( id = ) LIMIT 1  
+

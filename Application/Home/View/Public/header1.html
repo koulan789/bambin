@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>bambin婴儿用品</title>
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="__COMMON__styles/footer.css" />
+    <script type="text/javascript" src="__COMMON__scripts/jquery.js"></script>
+    <script type="text/javascript" src="__COMMON__scripts/mod_scrollbar.js"></script>
+</head>
+<body>
+<!-- __头部#header -->
+<div id="header" class="type2 type4">
+    <p class="link ff_simsun fs_12">
+        <if condition="$user">
+            欢迎您：<a>{$user.name}</a>
+            |
+            <a href="{:U('User/loginout')}">退出</a>
+            <else/>
+            <a href="{:U('User/login')}">会员登录</a>
+            |
+            <a href="{:U('User/register')}">免费注册</a>
+        </if>
+        |
+        <a href="{:U('Member/index')}">会员中心</a>
+        |
+        <a href="{:U('Buy/cart')}">我的购物车</a>
+
+    </p>
+    <a href="../index.html" class="logo">
+        <img src="__COMMON__images/logo.png" />
+    </a>
+    <form  class="search" style="width: 240px">
+
+    </form>
+    <p class="nav ff_fz fs_18">
+        <volist name="head_nav" id="vo" key="k">
+            <a href="{:U($vo['url'])}" class="nav{$k}">{$vo.name}</a>
+        </volist>
+    </p>
+    <!-- 清除浮动样式 -->
+    <div class="clear"></div>
+</div>
+<!-- //头部#header -->

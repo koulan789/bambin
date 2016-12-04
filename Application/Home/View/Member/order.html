@@ -1,0 +1,95 @@
+<include file="Public:header1" />
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/purchase_record.css" />
+	<script type="text/javascript" src="__COMMON__scripts/mod_sidebar_toggle.js"></script>
+    <script type="text/javascript" src="__COMMON__scripts/mod_select_all.js"></script>
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public:userside" />
+			<div class="main_text ff_yh fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('Member/index')}">会员中心</a>
+					&gt;&gt;
+					<a class="current">我的订单</a>
+				</p>
+				<h1 class="headline type2 fs_18">我购买的</h1>
+				<ul class="item_list">
+					<li class="item header fs_14">
+						<span class="float name">商品名称</span>
+						<span class="float price">单价（元）</span>
+						<span class="float amount">数量</span>
+						<span class="float total">交易状态</span>
+						<span class="float actions">交易操作</span>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+					<li class="action">
+						<input type="checkbox" groupid="g1" />
+						<span class="fs_14">全选</span>
+						<a href="#">批量确认收货</a>
+					</li>
+                    <volist name="order_data" id="order">
+					<li class="entry">
+						<p class="item header fs_14">
+							<input type="checkbox" selectid="g1" />
+							{$order.create_time|date='Y-m-d H:i:s',###}
+							<span class="fs_12">订单号： {$order.order_num}</span>
+
+						</p>
+                        <foreach name="order['goods_list']" item="goods">
+						<div class="item float name ff_simsun">
+							<img src="{$goods.img_thumb}" />
+							<p class="title">{$goods.name}</p>
+							<p class="category">容量：{$goods.standard}</p>
+						</div>
+						<p class="float price">{$goods.sale_price}元</p>
+						<p class="float amount fs_14">{$goods.num}</p>
+                        </foreach>
+						<p class="float status">
+							<span style="margin-top: 20px">{$order.status_name}</span>
+
+                            <if condition="$order['status'] eq 4">
+                                <span>双方已评</span>
+                            </if>
+						</p>
+						<p class="float actions">
+                            <if condition="$order['status'] eq 0">
+                                <a href="{:U('Buy/createBuy',array('id'=>$order['id']))}">立即付款</a>
+
+                            <elseif condition="$order['status'] eq 1" />
+
+                                <a href="#">再次购买</a>
+                            <elseif condition="$order['status'] eq 2" />
+                                <a href="#">确认收货</a>
+                                <a href="#">再次购买</a>
+                            <elseif condition="$order['status'] eq 3" />
+                                <a href="#">立即评论</a>
+                                <a href="#">再次购买</a>
+                            <else/>
+                                <a href="#">追加评论</a>
+                                <a href="#">再次购买</a>
+                            </if>
+
+						</p>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+                    </volist>
+				</ul>
+                <p class="page_nav">
+                    <a <if condition="$page gt 1" > href="{:U('Member/order',array('page'=>$page-1))}"</if>>上一页</a>
+                    |
+                    <volist name="pagelist" id="vol">
+                        <a href="{:U('Member/order',array('page'=>$vol))}" <if condition="$vol eq $page">class="current"</if> > {$vol}</a>
+                        |
+                    </volist>
+                    <a <if condition="$page lt $pageNum" > href="{:U('Member/order',array('page'=>$page+1))}"</if>>下一页</a>
+                </p>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer" />

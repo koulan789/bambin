@@ -1,0 +1,23 @@
+<ul class="sidebar type2 ff_yh fs_14">
+    <li class="banner ff_fz">
+        <p class="cn">会员中心</p>
+        <p class="en fs_14">Member Center</p>
+    </li>
+    <volist name="userside" id="side" key="k">
+        <li class="entry">
+            <if condition="$side['url']">
+                <p class="header side{$k}">
+                    <a href="{:U($side['url'])}">{$side.name}</a>
+                </p>
+                <else/>
+                <p class="header side{$k}">{$side.name}</p>
+            </if>
+            <ul class="sub_entry">
+                <foreach name="side.next" item="next">
+                    <li><a href="{:U($next['url'])}">{$next.name}</a></li>
+                </foreach>
+            </ul>
+        </li>
+    </volist>
+
+</ul>

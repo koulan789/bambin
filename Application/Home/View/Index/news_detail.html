@@ -1,0 +1,78 @@
+<include file="Public:header1"/>
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/news_detail.css" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public:side"/>
+			<div class="main_text ff_simsun fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="./">首页</a>
+					&gt;&gt;
+					<a href="{:U('Index/news')}" class="current">新闻中心</a>
+				</p>
+				<p class="center_text title fs_14">{$news_data.title}</p>
+				<p class="center_text pub_time">发布时间：{$news_data.time}  作者：{$news_data.writer}</p>
+				<p class="article">{$news_data.content}</p>
+
+				<p class="article_nav">
+                    <if condition="$news_pre">
+					    <a  href="{:U('Index/newsDetail',array('id'=>$news_pre['id']))}"   class="prev">上一篇</a>
+                     <else/>
+                        <a class="prev">没有了</a>
+                    </if>
+                    <if condition="$news_next">
+					<a href="{:U('Index/newsDetail',array('id'=>$news_next['id']))}"  class="next">下一篇</a>
+                        <else/>
+                        <a class="next">没有了</a>
+                    </if>
+				</p>
+				<ul class="news_list related">
+					<li class="headline type1 ff_yh fs_14">
+						<span>相关新闻</span>
+					</li>
+					<li class="entry">
+						·<a href="#">贝丁宝宝金水草本舒爽原液</a>
+					</li>
+					<li class="entry">
+						·<a href="#">专业宝宝保湿面霜加工OEM贴牌-婴儿系列</a>
+					</li>
+					<li class="entry">
+						·<a href="#">提供宝宝润肤乳护肤品OEM代加工</a>
+					</li>
+					<li class="entry">
+						·<a href="#">贝丁宝宝金水草本舒爽原液</a>
+					</li>
+					<li class="entry">
+						·<a href="#">专业宝宝保湿面霜加工OEM贴牌-婴儿系列</a>
+					</li>
+					<li class="entry">
+						·<a href="#">提供宝宝润肤乳护肤品OEM代加工</a>
+					</li>
+					<li class="entry">
+						·<a href="#">贝丁宝宝金水草本舒爽原液</a>
+					</li>
+					<li class="entry">
+						·<a href="#">专业宝宝保湿面霜加工OEM贴牌-婴儿系列护</a>
+					</li>
+				</ul>
+				<ul class="news_list recommend">
+					<li class="headline type1 ff_yh fs_14">
+						<span>热门推荐</span>
+					</li>
+                    <volist name="news_top" id="vol">
+                        <li class="entry">
+                            ·<a href="{:U('Index/newsDetail',array('id'=>$vol['id']))}">{$vol.title}</a>
+                        </li>
+                    </volist>
+
+				</ul>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer"/>

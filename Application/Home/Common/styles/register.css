@@ -1,0 +1,150 @@
+﻿/* 注册表单 */
+#content {
+	position: relative;
+	width: 412px;
+	margin: 161px 585px 151px 585px;
+	padding: 46px 188px 49px 150px;
+	background-color: #fff;
+}
+
+#content .picture {
+	position: absolute;
+	left: -340px;
+	top: -2px;
+	width: 530px;
+	height: 488px;
+	background: url('../images/bg/register_form_bg.png') no-repeat;
+}
+
+#content .tab_box .tabs {
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #010101;
+}
+
+#content .tab_box .tabs .tab {
+	display: inline-block;
+	margin: 0 45px;
+	color: #010101;
+}
+
+#content .tab_box .tabs .tab.current,
+#content .tab_box .tabs .tab.active {
+	color: #6b2888;
+}
+
+#content .tab_box .tabs .tab.first {
+	margin-left: 0;
+}
+
+#content .tab_box .tabs .tab.last {
+	margin-right: 0;
+}
+
+#content .tab_box .tab_content {
+	line-height: 83px;
+}
+
+#content .tab_box .tab_content .tag {
+	float: left;
+	width: 49px;
+	height: 83px;
+}
+
+#content .tab_box .tab_content .input {
+	float: left;
+	height: 37px;
+	margin: 17px 0;
+	padding: 5px;
+	border: #dcdcdc 1px solid;
+}
+
+#content .tab_box .tab_content .input.box {
+	width: 111px;
+	height: 40px;
+	line-height: 40px;
+	margin: 19px 7px 22px 11px;
+	padding: 0;
+}
+
+#content .tab_box .tab_content .input.text {
+	width: 351px;
+	height:49px;
+}
+
+#content .tab_box .tab_content .input.password {
+	width: 306px;
+	height:49px;
+	border-right: none;
+}
+
+#content .tab_box .tab_content .input.show_password {
+	width: 35px;
+	border-left: none;
+	background: url('../images/icons/eye.gif') no-repeat 5px center;
+}
+
+#content .tab_box .tab_content .input.show_password.active {
+	background-image: url('../images/icons/eye_dark.gif');
+}
+
+#content .tab_box .tab_content .input.verify {
+	width: 148px;
+	height:49px;
+}
+
+#content .tab_box .tab_content .input.verify_code img {
+	width: 111px;
+	height: 40px;
+}
+
+#content .tab_box .tab_content .change_verify {
+	color: #6b2888;
+}
+
+#content .tab_box .tab_content .change_verify:hover {
+	text-decoration: underline;
+}
+
+#content .tab_box .tab_content .input.activation {
+	width: 178px;
+height:49px;
+	padding-right: 43px;
+	background: url('../images/icons/phone.gif') no-repeat 188px center;
+}
+
+#content .tab_box .tab_content .input.get_activation {
+	text-align: center;
+}
+
+#content .tab_box .tab_content .input.get_activation:hover {
+	text-decoration: underline;
+}
+
+#content .agreement {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 49px;
+	color: #5e5e5e;
+}
+
+#content .agreement input {
+	vertical-align: middle;
+}
+
+#content .agreement a {
+	color: #743c8e;
+}
+
+#content .agreement a:hover {
+	text-decoration: underline;
+}
+
+#content .submit {
+	width: 362px;
+	height: 48px;
+	margin: 15px 0 0 49px;
+	background-color: #743c8e;
+}

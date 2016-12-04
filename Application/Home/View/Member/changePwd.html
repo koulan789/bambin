@@ -1,0 +1,121 @@
+<include file="Public:header1"/>
+	<link rel="stylesheet" type="text/css" href="__COMMON__styles/change_password.css" />
+	<script type="text/javascript" src="__COMMON__scripts/mod_sidebar_toggle.js"></script>
+
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public:userside"/>
+			<form action="{:U('Member/changePwd')}" method="post" class="main_text ff_yh fs_14" onsubmit="return check_form1()">
+				<p class="current_location ff_fz">
+					当前位置：
+					<a href="memeber.html">会员中心</a>
+					&gt;&gt;
+					<a href="change_password.html" class="current">修改密码</a>
+				</p>
+				<h1 class="headline type2 fs_18">修改密码</h1>
+
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<input type="password" class="input text" name="oldPwd" placeholder="请输入原密码" />
+                <span class="tip text fs_12" id="oldPwd_warning"></span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<input type="password" class="input text" name="pwd" placeholder="请输入新密码" />
+				<span class="tip text fs_12" id="pwd_warning">6-16位，数字，字母或下划线组合</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<input type="password" class="input text" name="rePwd" placeholder="确认新密码" />
+				<span class="tip warning fs_12" id="rePwd_warning"></span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<input type="text" class="input verify" id="verify" name="verify" placeholder="请输入验证码" />
+				<img src="{:U('Member/verify')}" class="box" onclick="change_verify()" id="verify_img" />
+				<a href="javascript:change_verify()" class="refresh_verify">看不清？</a>
+				<span class="tip warning fs_12" id="verify_warning">&#x25c0; 验证码不能为空</span>
+                <input type="hidden" name="verify_check" value="0"/>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<input type="submit" value="保存修改" class="float_btn save ff_yh fs_14" />
+				<input type="reset" value="返回" class="float_btn back ff_yh fs_14" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+                </form>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+<include file="Public:footer"/>
+
+<script>
+    function change_verify(){
+        $('#verify_img').attr('src',"{:U('Member/verify')}?rand="+Math.random());
+    }
+    $('input[name="pwd"]').blur(function(){
+        var pwd = $(this).val();
+        var regex_pwd = /^\w{6,16}$/;
+        if(regex_pwd.test(pwd)){
+            $('#pwd_warning').removeClass('warning').addClass('text').html('').css('background',"url('__COMMON__images/dui.jpg') no-repeat left 22px");
+        }else{
+            $('#pwd_warning').removeClass('text').addClass('warning').html('&#x25c0; 密码格式输入不正确').css('background',"");
+        }
+    }).focus(function(){
+            $('#pwd_warning').removeClass('warning').addClass('text').html('6-16位，数字，字母或下划线组合').css('background',"");
+    });
+    $('input[name="rePwd"]').blur(function(){
+        var pwd = $('input[name="pwd"]').val();
+        var rePwd = $('input[name="rePwd"]').val();
+        if($.trim(rePwd) == ''){
+            $('#rePwd_warning').html('&#x25c0; 确认新密码不能为空').css('background',"");
+        }else if($.trim(pwd) != $.trim(rePwd)){
+            $('#rePwd_warning').html('&#x25c0; 两次密码输入不一致').css('background',"");
+        }else{
+            $('#rePwd_warning').html('').css('background',"url('__COMMON__images/dui.jpg') no-repeat left 22px");
+        }
+    }).focus(function(){
+        $('#rePwd_warning').html('');
+    });
+    $('#verify').blur(function(){
+        var verify = $('#verify').val();
+        if($.trim(verify)){
+            $.post('{:U("Member/ajax_verify")}',{verify:verify},function(data){
+                if(data == -1){
+                    $('#verify_warning').html('&#x25c0; 验证码输入错误').css('background',"");
+                    $('input[name="verify_check"]').val(0);
+                }else if(data == 1){
+                    $('#verify_warning').html('').css('background',"url('__COMMON__images/dui.jpg') no-repeat left 22px");
+                    $('input[name="verify_check"]').val(1);
+                }
+            });
+            return false;
+        }else{
+            $('#verify_warning').html('&#x25c0; 验证码不能为空').css('background',"");
+            $('input[name="verify_check1"]').val(0);
+        }
+    }).focus(function(){
+                $('#verify_warning').html('');
+      });
+    function check_form1(){
+        var oldPwd = $('input[name="oldPwd"]').val();
+        if($.trim(oldPwd) == ''){
+            $('#oldPwd_warning').html('&#x25c0; 请输入原密码').css('background','');
+            return false;
+        }
+        var pwd = $('input[name="pwd"]').val();
+        if($.trim(pwd)==""){
+            $('#pwd_warning').removeClass('text').addClass('warning').html('&#x25c0; 请输入新密码').css('background','');
+            return false;
+        }
+        var rePwd = $('input[name="rePwd"]').val();
+        if($.trim(pwd) != $.trim(rePwd)){
+            $('#rePwd_warning').html('&#x25c0; 两次密码输入不一致').css('background',"");
+            return false;
+        }
+        var verify_check = $('input[name="verify_check"]').val();
+        if($.trim(verify_check) == 0){
+            $('#verify_warning').html('&#x25c0; 验证码不能为空').css('background',"");
+            return false;
+        }
+    }
+</script>
