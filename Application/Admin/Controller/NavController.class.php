@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: Administrator
- * Date: 16-1-25
- * Time: 上午9:30
- * To change this template use File | Settings | File Templates.
- */
+
 
 namespace Admin\Controller;
 
