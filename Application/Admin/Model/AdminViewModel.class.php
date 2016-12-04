@@ -2,7 +2,6 @@
 
 namespace Admin\Model;
 
-
 use Think\Model\ViewModel;
 
 class AdminViewModel extends ViewModel{
