@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Home\Controller;
-
 
 class MemberController extends BackloginControllor{
     public function index(){
