@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 02-1-13
- * Time: 上午8:47
- */
+
 
 namespace Admin\Controller;
 
