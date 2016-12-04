@@ -1,14 +1,6 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: Administrator
- * Date: 16-1-26
- * Time: 下午5:02
- * To change this template use File | Settings | File Templates.
- */
 
 namespace Admin\Model;
-
 
 use Think\Model\ViewModel;
 
